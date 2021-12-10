@@ -20,7 +20,7 @@
     </div>
     <!-- <div class="spinner-border text-primary"></div>Spinner fora da div fica sempre visivel -->
     <div class="mt-5 mb-3">
-        <button onclick="executarReq()">Send Request</button>
+        <button onclick="executarReq()" id="btn">Send Request</button>
     </div>
 
     <img src="./assets/img/spinn.gif" alt="Loading..." id="spinner" style="display: none;">
@@ -51,6 +51,7 @@
                 complete: function(){
                     console.log("TERMINADO");
                     $('#spinner').hide();
+                    $('#btn').hide();
                     //TERMINADO 
                 }
             })
